@@ -2,11 +2,22 @@ package euler002
 
 import (
     "euler"
-    "fmt"
 )
 
 func Solution() (uint64, error) {
-    return 0, fmt.Errorf("%s", "Not implemented yet")
+    var prev uint64
+    var curr uint64 = 1
+    var sum uint64
+    
+    for curr < 4000000 {
+        if (curr & 0x1 == 0x0) {
+            sum += curr
+        }
+        
+        prev, curr = curr, curr + prev
+    }
+    
+    return sum, nil
 }
 
 func init() {
