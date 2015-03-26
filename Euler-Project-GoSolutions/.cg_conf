@@ -1,0 +1,1 @@
+{"id":"golang","ext":"go","version":"Go v1.3.3","compile":"","execute":"GOPATH=$(pwd) go run src/euler001/main.go","preview":"","command":"","file":"/home/cg/src/samples/main.go","url":"execute_golang_online.php","mode":"golang"}
